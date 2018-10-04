@@ -105,7 +105,7 @@ module.exports = {
                      SMS getways for marketing communications`,
                 technologies: ['asp.net web api 2', 'angular.js', 'ms-sql', 'sql clr' ],
                 images: [
-                    '/assets/img/projects/ikea-family-others/1.png', '/assets/img/projects/ikea-family-others/2.png', '/assets/img/projects/ikea-family-others/3.png', '/assets/img/projects/ikea-family-others/4.png'
+                    '/assets/img/projects/ikea-family-others/1.PNG', '/assets/img/projects/ikea-family-others/2.png', '/assets/img/projects/ikea-family-others/3.png', '/assets/img/projects/ikea-family-others/4.png'
                 ]
             },{
                 id: id++,
@@ -113,7 +113,7 @@ module.exports = {
                 description: "Web-service and mobile app for field service management. Allows to organize work of small service companies which have field workers. Role in project: architecture design, analysis and compilation of requirements, development of web-service.",
                 technologies: ['asp.net web api 2', 'angular.js', 'postgres sql', 'mongo db'],
                 images: [
-                    '/assets/img/projects/snrd/1.png', '/assets/img/projects/snrd/2.png', '/assets/img/projects/snrd/3.png'
+                    '/assets/img/projects/Snrd/1.png', '/assets/img/projects/Snrd/2.png', '/assets/img/projects/Snrd/3.png'
                 ]
             },{
                 id: id++,
