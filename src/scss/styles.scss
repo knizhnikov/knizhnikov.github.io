@@ -1,0 +1,37 @@
+$primary:       #490c66 !default;
+$secondary:     #ea1d75 !default;
+$success:       #00bbb3 !default;
+$info:          #ff8422 !default;  //bhud
+$warning:       #fcd700 !default;
+$danger:        #fa6560 !default; //bhud
+
+$enable-rounded:            false !default;
+$enable-shadows:            true  !default;
+$enable-gradients:          true  !default;
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/_variables.scss";
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.sticky-top {
+    @supports (position: sticky) or (position: -webkit-sticky) {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: $zindex-sticky;
+    }
+  }
+
+.section-about {
+    background-color: #e7e7e7;
+    padding: 2em;
+}
+
+.section-contacts {
+    background-color: $primary;
+    margin-top: 6em;
+    padding: 2em;
+}
