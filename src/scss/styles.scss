@@ -12,6 +12,9 @@ $enable-gradients:          true  !default;
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/_variables.scss";
 
+$fa-font-path: "/dist";
+@import "~font-awesome/scss/font-awesome.scss";
+
 body {
     font-family: 'Noto Sans', sans-serif;
 }
