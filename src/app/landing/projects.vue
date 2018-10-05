@@ -7,7 +7,7 @@
                 controls
                 indicators
                 background="#fff"
-                :interval="400000"
+                :interval="4000"
                 img-width="1024"
                 img-height="480"
                 v-model="slide"
@@ -68,6 +68,7 @@ module.exports = {
     data: function(){
         var id = 1;
         return {
+            sliding: true,
             slide: 0,
             detailedProject: {},
             projectsExpanded: false,

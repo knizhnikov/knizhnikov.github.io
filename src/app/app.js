@@ -8,6 +8,7 @@ import Navigation from './landing/navigation.vue';
 import About from './landing/about.vue';
 import Projects from './landing/projects.vue';
 import Contacts from './landing/contacts.vue';
+import LandingFooter from './landing/landing-footer.vue';
 
 
 window.app = new Vue({
@@ -15,6 +16,6 @@ window.app = new Vue({
     data: {
     },
     components: {
-      Hero, Navigation, About, Projects, Contacts
+      Hero, Navigation, About, Projects, Contacts, LandingFooter
     }
   })

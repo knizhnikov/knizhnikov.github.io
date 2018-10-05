@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="hero-root">
         <div id="particles"></div>
         <div class="hero row m-0">
             <div class="title m-auto">
