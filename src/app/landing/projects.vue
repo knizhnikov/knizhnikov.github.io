@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" fade-in>
         <h2 class="mt-4">Projects</h2>
         <b-modal id="projectDetails" size="lg" @ok="getNextProject" ok-title="Next project" cancel-title="Close" cancel-variant="light">
             <b-carousel id="carousel1"

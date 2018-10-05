@@ -19,15 +19,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.sticky-top {
-    @supports (position: sticky) or (position: -webkit-sticky) {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: $zindex-sticky;
-    }
-  }
-
 #about {
     background-color: #e7e7e7;
     padding: 2em;
@@ -43,4 +34,16 @@ body {
     background-color: $primary;
     padding: 2em;
     color: lighten($primary, 50%);
+}
+
+[fade-in] {
+    opacity: 0;
+}
+
+.faded[fade-in] {
+    opacity: 1;
+
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
 }

@@ -5,7 +5,7 @@
             <h5>
                 You can find me there
             </h5>
-            <p class="my-4">
+            <p class="my-4" fade-in>
                 <a :class="{'mr-4': index != socials.length-1}" v-for="(media, index) in socials" :key="`media-${index}`" :href="media.link" target="_blank">
                     <span class="fa-stack fa-2x">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -15,7 +15,7 @@
             </p>
             <h5 class="my-4">Or send me a message with the form below</h5>
         </div>
-        <div class="row">
+        <div class="row" fade-in>
             <form class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
