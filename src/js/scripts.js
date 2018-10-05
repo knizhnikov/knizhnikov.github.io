@@ -16,7 +16,7 @@ function throttle(fn, wait) {
 function fadeElements(){
     if (!appearingElements)
         return;
-        
+
     appearingElements.forEach(element => {
         var r = element.getBoundingClientRect();
         if (document.documentElement.clientHeight - r.top >= 0 ){
@@ -29,6 +29,7 @@ var appearingElements;
 
 window.setTimeout(()=>{
     appearingElements = document.querySelectorAll('[fade-in]');
+    fadeElements();
 }, 100);
 
 window.addEventListener('scroll', throttle(fadeElements, 200));
