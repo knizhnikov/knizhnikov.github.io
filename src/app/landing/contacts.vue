@@ -6,7 +6,7 @@
                 You can find me there
             </h5>
             <p class="my-4">
-                <a class="mr-4" v-for="media in socials" :key="media.link" :href="media.link" target="_blank">
+                <a :class="{'mr-4': index != socials.length-1}" v-for="(media, index) in socials" :key="`media-${index}`" :href="media.link" target="_blank">
                     <span class="fa-stack fa-2x">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-fw fa-stack-1x fa-inverse" :class="media.icon"></i>
