@@ -1,6 +1,12 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
+const { ImageminWebpackPlugin } = require("imagemin-webpack");
+// Before importing imagemin plugin make sure you add it in `package.json` (`dependencies`) and install
+const imageminJpegtran = require("imagemin-jpegtran");
+const imageminOptipng = require("imagemin-optipng");
+const plugins = [imageminJpegtran(),imageminOptipng( { optimizationLevel: 4 } )];
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -11,9 +17,9 @@ module.exports = {
       rules: [{
           test: /\.scss$/,
           use: [
-              "style-loader", // creates style nodes from JS strings
-              "css-loader", // translates CSS into CommonJS
-              "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              "style-loader", 
+              "css-loader", 
+              "sass-loader" 
           ]
       },
       {
@@ -40,9 +46,26 @@ module.exports = {
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url-loader?name=[name].[ext]&limit=10000&mimetype=image/svg+xml"
+      }, {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: '[name].[ext]',
+              useRelativePath: true,
+              publicPath: url => url
+            }
+          }
+        ]
       }]
   }, 
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new ImageminWebpackPlugin({
+      imageminOptions: {
+        plugins
+      }
+    })
   ]
 };

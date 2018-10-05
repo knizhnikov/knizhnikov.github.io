@@ -79,7 +79,7 @@ module.exports = {
                 description: "CRM tool for IKEA FAMILY coworkers, used for managing customers information, pruchase history, workshops, offers, coupons etc.",
                 technologies: ['asp.net web api 2', 'angular.js', 'angular 5', 'bootstrap', 'ms-sql'],
                 images: [
-                    '/assets/img/projects/coworker/1.png', '/assets/img/projects/coworker/2.png', '/assets/img/projects/coworker/3.png'
+                    '/dist/img/projects/coworker/1.png', '/dist/img/projects/coworker/2.png', '/dist/img/projects/coworker/3.png'
                 ]
             }, {
                 id: id++,
@@ -87,7 +87,7 @@ module.exports = {
                 description: "Web site for IKEA FAMILY members for managing personal info, getting coupons, viewing special offers for IKEA FAMILY members, getting card",
                 technologies: ['asp.net web api 2', 'angular.js', 'bootstrap', 'ms-sql'],
                 images: [
-                    '/assets/img/projects/online/1.png', '/assets/img/projects/online/2.png', '/assets/img/projects/online/3.png', '/assets/img/projects/online/4.png', '/assets/img/projects/online/5.png', '/assets/img/projects/online/6.png'
+                    '/dist/img/projects/online/1.png', '/dist/img/projects/online/2.png', '/dist/img/projects/online/3.png', '/dist/img/projects/online/4.png', '/dist/img/projects/online/5.png', '/dist/img/projects/online/6.png'
                 ]
             }, {
                 id: id++,
@@ -95,7 +95,7 @@ module.exports = {
                 description: "IKEA FAMILY in-store kiosk application for managing member's profile, printing temporary cards, viewing special offers and coupons",
                 technologies: ['asp.net web api 2', 'angular.js', 'bootstrap', 'ms-sql'],
                 images: [
-                    '/assets/img/projects/kiosk/1.png'
+                    '/dist/img/projects/kiosk/1.png'
                 ]
             },{
                 id: id++,
@@ -106,7 +106,7 @@ module.exports = {
                      SMS getways for marketing communications`,
                 technologies: ['asp.net web api 2', 'angular.js', 'ms-sql', 'sql clr' ],
                 images: [
-                    '/assets/img/projects/ikea-family-others/1.PNG', '/assets/img/projects/ikea-family-others/2.png', '/assets/img/projects/ikea-family-others/3.png', '/assets/img/projects/ikea-family-others/4.png'
+                    '/dist/img/projects/ikea-family-others/1.png', '/dist/img/projects/ikea-family-others/2.png', '/dist/img/projects/ikea-family-others/3.png', '/dist/img/projects/ikea-family-others/4.png'
                 ]
             },{
                 id: id++,
@@ -114,7 +114,7 @@ module.exports = {
                 description: "Web-service and mobile app for field service management. Allows to organize work of small service companies which have field workers. Role in project: architecture design, analysis and compilation of requirements, development of web-service.",
                 technologies: ['asp.net web api 2', 'angular.js', 'postgres sql', 'mongo db'],
                 images: [
-                    '/assets/img/projects/Snrd/1.png', '/assets/img/projects/Snrd/2.png', '/assets/img/projects/Snrd/3.png'
+                    '/dist/img/projects/Snrd/1.png', '/dist/img/projects/Snrd/2.png', '/dist/img/projects/Snrd/3.png'
                 ]
             },{
                 id: id++,
@@ -122,7 +122,7 @@ module.exports = {
                 description: "License control and accounting system for Agent Plus - software platform for field workers automation.",
                 technologies: ['asp.net mvc 5', 'asp.net web api 2', 'knockout.js', 'ms-sql'],
                 images: [
-                    '/assets/img/projects/AgentPlus/1.png', '/assets/img/projects/AgentPlus/2.png', '/assets/img/projects/AgentPlus/3.png', '/assets/img/projects/AgentPlus/4.png'
+                    '/dist/img/projects/AgentPlus/1.png', '/dist/img/projects/AgentPlus/2.png', '/dist/img/projects/AgentPlus/3.png', '/dist/img/projects/AgentPlus/4.png'
                 ]
             },{
                 id: id++,
@@ -130,7 +130,7 @@ module.exports = {
                 description: "Cloud advertising platform for Wi-Fi users. Allows to show advertising content in client’s web-browsers and get statistics about shows (number of shows, number of clicks, click-through rate, the number of users who seen the ads, etc).",
                 technologies: ['asp.net mvc 5', 'asp.net web api 2',  'angular.js', 'entiry framework 6', 'ms-sql', 'mongo db'],
                 images: [
-                    '/assets/img/projects/Adwify/0.png', '/assets/img/projects/Adwify/1.png', '/assets/img/projects/Adwify/2.png'
+                    '/dist/img/projects/Adwify/0.png', '/dist/img/projects/Adwify/1.png', '/dist/img/projects/Adwify/2.png'
                 ]
             },{
                 id: id++,
@@ -138,8 +138,8 @@ module.exports = {
                 description: "Cloud services for customers loyalty increasing. Allows to show interactive ads and promotions on devices, connected to Wi-Fi and analyze its efficiency.",
                 technologies: ['asp.net mvc 5', 'asp.net web api 2',  'angular.js', 'entiry framework 6', 'ms-sql', 'mongo db'],
                 images: [
-                    '/assets/img/projects/Hoopla/client/0.jpg', '/assets/img/projects/Hoopla/client/1.jpg', '/assets/img/projects/Hoopla/client/2.jpg', '/assets/img/projects/Hoopla/client/3.jpg',
-                    '/assets/img/projects/Hoopla/office/0.png', '/assets/img/projects/Hoopla/office/1.png', '/assets/img/projects/Hoopla/office/2.png', '/assets/img/projects/Hoopla/office/3.png'
+                    '/dist/img/projects/Hoopla/client/0.jpg', '/dist/img/projects/Hoopla/client/1.jpg', '/dist/img/projects/Hoopla/client/2.jpg', '/dist/img/projects/Hoopla/client/3.jpg',
+                    '/dist/img/projects/Hoopla/office/0.png', '/dist/img/projects/Hoopla/office/1.png', '/dist/img/projects/Hoopla/office/2.png', '/dist/img/projects/Hoopla/office/3.png'
                 ]
             },{
                 id: id++,
@@ -147,7 +147,7 @@ module.exports = {
                 description: "Cloud service for startups expert review and optimizing work with project teams of business incubators. Now widely used by Higher School of Economy, Moscow",
                 technologies: ['asp.net mvc 5', 'asp.net web api 2', 'angular.js', 'entiry framework 6', 'ms-sql', 'mongo db'],
                 images: [
-                    '/assets/img/projects/Startupsearch/1.png'
+                    '/dist/img/projects/Startupsearch/1.png'
                 ]
             }]
         };

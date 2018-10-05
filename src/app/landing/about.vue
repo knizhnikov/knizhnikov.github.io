@@ -2,7 +2,7 @@
     <div class="container" fade-in>
         <div class="row">
             <div class="col-12 col-md-4 text-center align-middle">
-                <img style="width: 200px; margin-top: 70px" class="rounded-circle" src="assets/img/photo.jpg">
+                <img style="width: 200px; margin-top: 70px" class="rounded-circle" src="/dist/img/photo.jpg">
             </div>
              <div class="col-12 col-md-8">
                  <h2 class="mt-4">About me</h2>

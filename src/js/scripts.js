@@ -30,6 +30,6 @@ var appearingElements;
 window.setTimeout(()=>{
     appearingElements = document.querySelectorAll('[fade-in]');
     fadeElements();
-}, 100);
+}, 90);
 
-window.addEventListener('scroll', throttle(fadeElements, 200));
+window.addEventListener('scroll', throttle(fadeElements, 100));
