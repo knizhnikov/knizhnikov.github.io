@@ -16,7 +16,7 @@
             <h5 class="my-4">Or send me a message with the form below</h5>
         </div>
         <div class="row" fade-in>
-            <form v-on:submit.prevent="postMessage" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <form method="POST" utl="https://formspree.io/knizhnikov.vasiliy@gmail.com" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
                 <div class="form-group">
                     <input v-model="email" name="email" type="email" class="form-control" placeholder="Email" required>
                 </div>
