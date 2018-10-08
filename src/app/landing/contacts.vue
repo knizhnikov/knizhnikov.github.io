@@ -16,18 +16,18 @@
             <h5 class="my-4">Or send me a message with the form below</h5>
         </div>
         <div class="row" fade-in>
-            <form class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-at"></i></span>
-                    </div>
-                    <input type="email" class="form-control" placeholder="Email" required>
+            <form v-on:submit.prevent="postMessage" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+                <div class="form-group">
+                    <input v-model="email" name="email" type="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Message" rows="8" class="form-control" required></textarea>
+                    <textarea v-model="message" name="message" placeholder="Message" rows="8" class="form-control" required></textarea>
                 </div>
                 <p>
-                    <button class="btn btn-block btn-success">Send <i class="fa fa-envelope"></i></button>
+                    <button :disabled="sending" class="btn btn-block btn-success">
+                        <span v-if="!sending">Send <i class="fa fa-envelope"></i></span>
+                        <i v-if="sending" class="fa fa-spin fa-circle-o-notch"></i> 
+                    </button>
                 </p>
             </form>
         </div>
@@ -35,9 +35,15 @@
 </template>
 
 <script>
+import axios from "axios";
+import swal from "sweetalert2";
+
 export default {
-    data: function(){
+    data() {
         return {
+            sending: false,
+            email: null,
+            message: null,
             socials: [{
                     icon: 'fa-github',
                     link: 'https://github.com/knizhnikov'
@@ -59,6 +65,24 @@ export default {
                 }
             ]
         };
+    },
+    methods: {
+        postMessage() {
+            this.sending = true;
+            axios.post('https://formspree.io/knizhnikov.vasiliy@gmail.com', {
+                email: this.email,
+                message: this.message
+            })
+            .then(response => {
+                swal('Done!', 'Your message have been sent. I will contact you as soon as possible, thanks!', 'success');
+                this.email = null;
+                this.message = null;
+                this.sending = false;
+            })
+            .catch(e => {
+                this.errors.push(e)
+            })
+        }
     }
 }
 </script>

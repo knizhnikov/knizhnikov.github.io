@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-12 col-sm-9">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" :style="{width: skill.percent + '%'}" role="progressbar">{{skill.percent}}%</div>
+                            <div class="progress-bar progress-bar-striped bg-success forced-zero" :style="{width: skill.percent + '%'}" role="progressbar">{{skill.percent}}%</div>
                         </div>
                     </div>
                 </div>

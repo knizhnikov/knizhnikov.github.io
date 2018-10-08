@@ -46,26 +46,28 @@ module.exports = {
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url-loader?name=[name].[ext]&limit=10000&mimetype=image/svg+xml"
-      }, {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: '[name].[ext]',
-              useRelativePath: true,
-              publicPath: url => url
-            }
-          }
-        ]
-      }]
+      }, 
+      //{
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: '[name].[ext]',
+      //         useRelativePath: true,
+      //         publicPath: url => url
+      //       }
+      //     }
+      //   ]
+      // }
+    ]
   }, 
   plugins: [
     new VueLoaderPlugin(),
-    new ImageminWebpackPlugin({
-      imageminOptions: {
-        plugins
-      }
-    })
+    // new ImageminWebpackPlugin({
+    //   imageminOptions: {
+    //     plugins
+    //   }
+    // })
   ]
 };

@@ -197,9 +197,9 @@ module.exports = {
         height: 400px;
 
         img {
-            max-height: 100% !important;
-            width: auto !important;
-            margin: auto !important;
+            position: absolute;
+            top: 0; bottom:0; left: 0; right:0;
+            margin: auto;
         }
     }
 </style>
