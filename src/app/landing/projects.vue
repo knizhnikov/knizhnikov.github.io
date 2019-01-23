@@ -157,7 +157,7 @@ module.exports = {
 
 <style lang="scss">
     .project-list.expanded {
-        height: inherit;
+        max-height: 5000px;
         overflow-y: none;
 
         -webkit-transition: all .3s ease-in;
@@ -167,7 +167,7 @@ module.exports = {
     }
 
     .project-list {
-        height: 400px;
+        max-height: 400px;
         overflow-y:hidden;
 
         -webkit-transition: all .3s ease-out;
@@ -194,11 +194,12 @@ module.exports = {
     }
 
     .carousel-item {
-        height: 400px;
+
+        max-height: 400px;
 
         img {
-            position: absolute;
-            top: 0; bottom:0; left: 0; right:0;
+            max-height: 400px;
+            width: auto !important;
             margin: auto;
         }
     }

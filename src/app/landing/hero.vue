@@ -11,7 +11,7 @@
                     </span>
                 </div>
                 <div class="mt-4">
-                    <button class="btn btn-outline-secondary">Tell me more <i class="fa fa-caret-down"></i></button>
+                    <a href="#about" class="btn btn-outline-secondary">Tell me more <i class="fa fa-caret-down"></i></a>
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
 <template>
-    <div class="container">
+    <div class="container text-center">
         <h2>Contacts</h2>
-        <div class="text-center">
+        <div class="my-5">
             <h5>
-                You can find me there
+                You can find me here
             </h5>
             <p class="my-4" fade-in>
                 <a :class="{'mr-4': index != socials.length-1}" v-for="(media, index) in socials" :key="`media-${index}`" :href="media.link" target="_blank">
@@ -13,9 +13,9 @@
                     </span>
                 </a>
             </p>
-            <h5 class="my-4">Or send me a message with the form below</h5>
+            <!-- <h5 class="my-4">Or send me a message with the form below</h5> -->
         </div>
-        <div class="row" fade-in>
+        <!-- <div class="row" fade-in>
             <form method="POST" url="https://formspree.io/knizhnikov.vasiliy@gmail.com" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
                 <div class="form-group">
                     <input v-model="email" name="email" type="email" class="form-control" placeholder="Email" required>
@@ -30,7 +30,7 @@
                     </button>
                 </p>
             </form>
-        </div>
+        </div> -->
     </div>
 </template>
 

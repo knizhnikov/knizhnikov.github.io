@@ -65,22 +65,22 @@ export default {
         return {
             skills: [{
                     name: 'c#',
-                    percent: '80'
+                    percent: '90'
                 }, {
                     name: 'asp.net web api',
-                    percent: '75'
+                    percent: '85'
                 }, {
                     name: 'asp.net core',
                     percent: '70'
                 }, {
                     name: 'javascript',
-                    percent: '80'
+                    percent: '90'
                 }, {
                     name: 'angular.js',
-                    percent: '80'
+                    percent: '85'
                 }, {
-                    name: 'angular 5+',
-                    percent: '50'
+                    name: 'angular 7',
+                    percent: '70'
                 }
             ]
         }
